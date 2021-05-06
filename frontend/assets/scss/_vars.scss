@@ -1,0 +1,25 @@
+$font-size: 16px;
+$text: #403e4f;
+$font-family: "Commissioner", sans-serif;
+$man: "Manrope", sans-serif;
+
+$primary: #352e5f;
+$primary-light:#655C9C;
+$accent: #ff4242;
+$disabled: #a8a6b1;
+
+// Bootstrap variables
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+) !default;
+
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1466px,
+) !default;

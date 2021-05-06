@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_catalog_item_catalog_items",
+  "info": {
+    "name": "catalog_item",
+    "icon": "align-justify",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "link": {
+      "type": "component",
+      "repeatable": true,
+      "component": "link.link"
+    }
+  }
+}

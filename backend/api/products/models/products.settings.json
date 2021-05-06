@@ -1,0 +1,113 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "name": "Товары",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "price": {
+      "type": "biginteger"
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "price_old": {
+      "type": "biginteger",
+      "default": "0"
+    },
+    "sale": {
+      "type": "integer",
+      "default": 0
+    },
+    "new": {
+      "type": "enumeration",
+      "enum": [
+        "Y",
+        "N"
+      ],
+      "default": "N"
+    },
+    "catalog_element": {
+      "model": "catalog-element",
+      "via": "products"
+    },
+    "filters": {
+      "collection": "filter",
+      "via": "products"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "detailed_information": {
+      "type": "richtext"
+    },
+    "characteristics": {
+      "type": "component",
+      "repeatable": true,
+      "component": "characteristics.characteristics"
+    },
+    "sku": {
+      "type": "string"
+    },
+    "count": {
+      "type": "integer",
+      "default": 1,
+      "private": false
+    },
+    "functions": {
+      "type": "text"
+    },
+    "catalog": {
+      "model": "catalog"
+    },
+    "metaKey": {
+      "type": "text",
+      "required": true
+    },
+    "metaDescription": {
+      "type": "text"
+    },
+    "iconNavigate": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "PreviewBlock": {
+      "type": "boolean",
+      "default": false
+    },
+    "files": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

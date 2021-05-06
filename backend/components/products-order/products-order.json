@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_products_order_products_orders",
+  "info": {
+    "name": "productsOrder",
+    "icon": "apple-alt"
+  },
+  "options": {},
+  "attributes": {
+    "id_product": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "sku": {
+      "type": "string"
+    },
+    "functions": {
+      "type": "text"
+    },
+    "count": {
+      "type": "string"
+    },
+    "sale": {
+      "type": "string"
+    },
+    "price": {
+      "type": "string"
+    },
+    "priceCount": {
+      "type": "string"
+    }
+  }
+}

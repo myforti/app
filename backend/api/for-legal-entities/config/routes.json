@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/for-legal-entities",
+      "handler": "for-legal-entities.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/for-legal-entities",
+      "handler": "for-legal-entities.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/for-legal-entities",
+      "handler": "for-legal-entities.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

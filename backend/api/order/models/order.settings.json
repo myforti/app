@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "name": "Заказы",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "count": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "userOrder": {
+      "type": "component",
+      "repeatable": false,
+      "component": "user.user"
+    },
+    "productsOrder": {
+      "type": "component",
+      "repeatable": true,
+      "component": "products-order.products-order"
+    },
+    "typePayer": {
+      "type": "string"
+    },
+    "statusOrder": {
+      "type": "enumeration",
+      "enum": [
+        "O",
+        "D",
+        "Z"
+      ],
+      "default": "O"
+    },
+    "idSearch": {
+      "type": "biginteger"
+    }
+  }
+}

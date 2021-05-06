@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_delivery_addresse_delivery_addresses",
+  "info": {
+    "name": "delivery_addresse",
+    "icon": "address-book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "address": {
+      "type": "string"
+    },
+    "selected": {
+      "type": "boolean",
+      "default": false
+    },
+    "index": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "street": {
+      "type": "string"
+    },
+    "apartament": {
+      "type": "string"
+    },
+    "house": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "catalogs",
+  "info": {
+    "name": "Категории",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "catalog_elements": {
+      "via": "catalogs",
+      "collection": "catalog-element",
+      "dominant": true
+    },
+    "metaKey": {
+      "type": "text",
+      "unique": false,
+      "required": true
+    },
+    "metaDescription": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

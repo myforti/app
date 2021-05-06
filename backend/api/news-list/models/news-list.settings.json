@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "news_lists",
+  "info": {
+    "name": "Новости",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "metaKey": {
+      "type": "text",
+      "required": true
+    },
+    "metaDescription": {
+      "type": "text",
+      "required": true
+    },
+    "slug": {
+      "type": "string"
+    },
+    "custom_date": {
+      "type": "date"
+    }
+  }
+}

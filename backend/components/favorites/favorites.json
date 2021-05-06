@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_favorites_favorites",
+  "info": {
+    "name": "favorites",
+    "icon": "heart"
+  },
+  "options": {},
+  "attributes": {
+    "id_favorite": {
+      "type": "biginteger",
+      "default": "0"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "kind": "collectionType",
+  "collectionName": "catalog_elements",
+  "info": {
+    "name": "Группы товаров",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "products": {
+      "via": "catalog_element",
+      "collection": "products"
+    },
+    "description": {
+      "type": "text"
+    },
+    "icons": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "filters": {
+      "collection": "filter"
+    },
+    "mainImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "showMain": {
+      "type": "boolean",
+      "default": false
+    },
+    "catalogs": {
+      "collection": "catalog",
+      "via": "catalog_elements"
+    },
+    "metakey": {
+      "type": "text",
+      "required": true
+    },
+    "metaDescription": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

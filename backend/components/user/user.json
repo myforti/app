@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_user_users",
+  "info": {
+    "name": "user",
+    "icon": "baby"
+  },
+  "options": {},
+  "attributes": {
+    "id_user": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "organization": {
+      "type": "string"
+    },
+    "deliveryAddresse": {
+      "type": "text"
+    }
+  }
+}

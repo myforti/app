@@ -1,0 +1,68 @@
+{
+  "kind": "singleType",
+  "collectionName": "settings",
+  "info": {
+    "name": "Контакты и данные",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "addresse": {
+      "type": "string"
+    },
+    "coords_map": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "email_send": {
+      "type": "string",
+      "required": true
+    },
+    "social": {
+      "type": "component",
+      "repeatable": true,
+      "component": "social.social"
+    },
+    "metaKey": {
+      "type": "text",
+      "required": true
+    },
+    "metaDescription": {
+      "type": "text",
+      "required": true
+    },
+    "api_key_map": {
+      "type": "string"
+    },
+    "info": {
+      "type": "component",
+      "repeatable": true,
+      "component": "info.info"
+    },
+    "metaTitle": {
+      "type": "string",
+      "required": true
+    },
+    "Price": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

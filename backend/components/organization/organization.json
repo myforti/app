@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_organization_organizations",
+  "info": {
+    "name": "organization",
+    "icon": "address-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "selected": {
+      "type": "boolean",
+      "default": false,
+      "unique": false,
+      "required": false
+    },
+    "inn": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_order_item_order_items",
+  "info": {
+    "name": "order-item",
+    "icon": "book-reader"
+  },
+  "options": {},
+  "attributes": {
+    "id_user": {
+      "type": "integer"
+    }
+  }
+}

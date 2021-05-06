@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/catalog-elements",
+      "handler": "catalog-element.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/catalog-elements/count",
+      "handler": "catalog-element.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/catalog-elements/:id",
+      "handler": "catalog-element.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/catalog-elements",
+      "handler": "catalog-element.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/catalog-elements/:id",
+      "handler": "catalog-element.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/catalog-elements/:id",
+      "handler": "catalog-element.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
